@@ -1,0 +1,1840 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.top {
+  width: 100%;
+  height: 60px;
+  background-image: url(https://n11scdn.akamaized.net/a1/org/25/03/21/59/22/12/65/16/72/18/43/78/98705717187360503777.jpg);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+header .headercontainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .headercontainer .headerleft {
+  width: 10%;
+  height: 45px;
+}
+header .headercontainer .headerleft img {
+  width: 100%;
+  height: 100%;
+}
+header .headercontainer .headerright {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .headercontainer .headerright .hamb {
+  display: none;
+}
+header .headercontainer .headerright .search {
+  width: 680px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #5D3EBC;
+  border-radius: 30px;
+}
+header .headercontainer .headerright .search i {
+  color: #5D3EBC;
+}
+header .headercontainer .headerright .search input {
+  width: 640px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+header .headercontainer .headerright .teslimat {
+  width: 165px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .headercontainer .headerright .teslimat .icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .headercontainer .headerright .teslimat .icon i {
+  font-size: 25px;
+  color: #5D3EBC;
+}
+header .headercontainer .headerright .teslimat .teslimattxt {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .headercontainer .headerright .teslimat .teslimattxt h5 {
+  font-size: 10px;
+  color: #4F4F4F;
+}
+header .headercontainer .headerright .teslimat .teslimattxt a {
+  font-size: 13px;
+  color: #5D3EBC;
+}
+header .headercontainer .headerright .cart {
+  width: 60px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #5D3EBC;
+  border-left: 1px solid #4F4F4F;
+}
+header .headercontainer .headerright .hesabim {
+  width: 165px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .headercontainer .headerright .hesabim .icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .headercontainer .headerright .hesabim .icon i {
+  font-size: 22px;
+  color: #5D3EBC;
+}
+header .headercontainer .headerright .hesabim .hesabimtxt {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .headercontainer .headerright .hesabim .hesabimtxt h5 {
+  font-size: 10px;
+  color: #4F4F4F;
+}
+header .headercontainer .headerright .hesabim .hesabimtxt a {
+  font-size: 11px;
+  color: #5D3EBC;
+  display: inline;
+}
+
+.category {
+  width: 100%;
+  height: 50px;
+  background-color: #F6F7F9;
+  display: flex;
+  justify-content: center;
+}
+.category .categorycontainer {
+  width: 80%;
+}
+.category .categorycontainer ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category .categorycontainer ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.category .categorycontainer ul li:hover {
+  border-bottom: 2px solid #4F379B;
+}
+.category .categorycontainer ul li img {
+  width: 30px;
+  height: 30px;
+}
+.category .categorycontainer ul li span {
+  font-size: 13px;
+  color: #424242;
+}
+
+.kampanya {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kampanya .kampanyacontainer {
+  width: 80%;
+  height: 90%;
+}
+.kampanya .kampanyacontainer img {
+  border-radius: 5px;
+}
+
+.kuponlar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kuponlar .kuponlarcontainer {
+  width: 80%;
+  height: 70%;
+  background-color: #edeff3;
+  border-radius: 5px;
+}
+.kuponlar .kuponlarcontainer ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.kuponlar .kuponlarcontainer ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.kuponlar .kuponlarcontainer ul li img {
+  width: 60px;
+  height: 60px;
+}
+.kuponlar .kuponlarcontainer ul li span {
+  font-size: 18px;
+  color: #1F1F1F;
+}
+.kuponlar .kuponlarcontainer ul li .border {
+  width: 1px;
+  height: 30px;
+  background-color: #d3d6df;
+}
+
+.fivecards {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+.fivecards .fivecontainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  position: unset;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+}
+.fivecards .fivecontainer .card1 {
+  width: 18%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fivecards .fivecontainer .card1 .cardimg {
+  width: 100%;
+  height: 230px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fivecards .fivecontainer .card1 .cardimg img {
+  width: 100%;
+  height: 200px;
+}
+.fivecards .fivecontainer .card1 .cardimg h5 {
+  color: #5D3EBC;
+  text-align: center;
+  font-size: 13px;
+}
+.fivecards .fivecontainer .card1 .carddesc h3 {
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1F1F1F;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.fivecards .fivecontainer .card1 .rating {
+  display: flex;
+  color: gold;
+}
+.fivecards .fivecontainer .card1 .rating i {
+  font-size: 13px;
+}
+.fivecards .fivecontainer .card1 .rating span {
+  color: #707070;
+  font-size: 11px;
+}
+.fivecards .fivecontainer .card1 h4 {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+.fivecards .fivecontainer .card1 .sepette {
+  font-size: 13px;
+  color: #4F379B;
+  font-weight: 700;
+}
+.fivecards .fivecontainer .card1 h2 {
+  color: #202020;
+  font-size: 20px;
+}
+
+.teklifler {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.teklifler .tekliflercontainer {
+  width: 80%;
+  height: 100%;
+  background-color: #4F379B;
+  border-radius: 5px;
+  display: flex;
+}
+.teklifler .tekliflercontainer .tekliflertxt {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.teklifler .tekliflercontainer .tekliflertxt h2 {
+  font-size: 24px;
+  color: white;
+}
+.teklifler .tekliflercontainer .tekliflersaat {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+.teklifler .tekliflercontainer .tekliflersaat .saat {
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teklifler .tekliflercontainer .tekliflersaat .deq {
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: rgba(203, 192, 249, 0.937254902);
+}
+
+.tekliflercards {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tekliflercards .cardscontainer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  position: unset;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+}
+.tekliflercards .cardscontainer .card1 {
+  width: 18%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tekliflercards .cardscontainer .card1 .cardimg {
+  width: 100%;
+  height: 230px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.tekliflercards .cardscontainer .card1 .cardimg img {
+  width: 100%;
+  height: 200px;
+}
+.tekliflercards .cardscontainer .card1 .cardimg h5 {
+  color: #5D3EBC;
+  text-align: center;
+  font-size: 13px;
+}
+.tekliflercards .cardscontainer .card1 .cardimg .wish {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  color: #4F4F4F;
+}
+.tekliflercards .cardscontainer .card1 .cardimg .badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.tekliflercards .cardscontainer .card1 .cardimg .badges img {
+  width: 55px;
+  height: 55px;
+}
+.tekliflercards .cardscontainer .card1 .carddesc h3 {
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1F1F1F;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.tekliflercards .cardscontainer .card1 .rating {
+  display: flex;
+  color: gold;
+}
+.tekliflercards .cardscontainer .card1 .rating i {
+  font-size: 13px;
+}
+.tekliflercards .cardscontainer .card1 .rating span {
+  color: #707070;
+  font-size: 11px;
+}
+.tekliflercards .cardscontainer .card1 h4 {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+.tekliflercards .cardscontainer .card1 .sepette {
+  font-size: 13px;
+  color: #4F379B;
+  font-weight: 700;
+}
+.tekliflercards .cardscontainer .card1 h2 {
+  color: #202020;
+  font-size: 20px;
+}
+
+.secenekler {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secenekler .seceneklercontainer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.secenekler .seceneklercontainer .secenekcards {
+  display: flex;
+  position: unset;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 {
+  width: 18%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .cardimg {
+  width: 100%;
+  height: 230px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .cardimg img {
+  width: 100%;
+  height: 200px;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .cardimg h5 {
+  color: #5D3EBC;
+  text-align: center;
+  font-size: 13px;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .cardimg .wish {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  color: #4F4F4F;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .cardimg .badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .cardimg .badges img {
+  width: 55px;
+  height: 55px;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .carddesc h3 {
+  text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1F1F1F;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .rating {
+  display: flex;
+  color: gold;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .rating i {
+  font-size: 13px;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .rating span {
+  color: #707070;
+  font-size: 11px;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 h4 {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 .sepette {
+  font-size: 13px;
+  color: #4F379B;
+  font-weight: 700;
+}
+.secenekler .seceneklercontainer .secenekcards .card1 h2 {
+  color: #202020;
+  font-size: 20px;
+}
+
+.elektronik {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.elektronik .elektronikcontainer {
+  width: 80%;
+  height: 100%;
+}
+.elektronik .elektronikcontainer .elektronikimg {
+  width: 100%;
+  height: 475px;
+  position: relative;
+}
+.elektronik .elektronikcontainer .elektronikimg img {
+  border-radius: 5px;
+}
+.elektronik .elektronikcontainer .elektronikcards {
+  width: 40%;
+  position: absolute;
+  display: flex;
+  right: 0px;
+  top: 10px;
+  gap: 10px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 {
+  width: 40%;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .cardimg {
+  width: 100%;
+  height: 175px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .cardimg img {
+  width: 100%;
+  height: 150px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .cardimg h5 {
+  color: #5D3EBC;
+  text-align: center;
+  font-size: 13px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .cardimg .wish {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  color: #4F4F4F;
+  background-color: white;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .cardimg .badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .cardimg .badges img {
+  width: 55px;
+  height: 55px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .carddesc h3 {
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1F1F1F;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .rating {
+  display: flex;
+  color: gold;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .rating i {
+  font-size: 13px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .rating span {
+  color: #707070;
+  font-size: 11px;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 h4 {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 .sepette {
+  font-size: 13px;
+  color: #4F379B;
+  font-weight: 700;
+}
+.elektronik .elektronikcontainer .elektronikcards .card1 h2 {
+  color: #202020;
+  font-size: 20px;
+}
+.elektronik .elektronikcontainer .elektronikmarka {
+  width: 600px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
+.elektronik .elektronikcontainer .elektronikmarka img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.elektronik1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.elektronik1 .elektronikcontainer {
+  width: 80%;
+  height: 100%;
+}
+.elektronik1 .elektronikcontainer .elektronikimg {
+  width: 100%;
+  height: 475px;
+  position: relative;
+}
+.elektronik1 .elektronikcontainer .elektronikimg img {
+  border-radius: 5px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards {
+  width: 40%;
+  position: absolute;
+  display: flex;
+  right: 0px;
+  top: 10px;
+  gap: 10px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 {
+  width: 40%;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg {
+  width: 100%;
+  height: 175px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg img {
+  width: 100%;
+  height: 150px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg h5 {
+  color: #5D3EBC;
+  text-align: center;
+  font-size: 13px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg .wish {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  color: #4F4F4F;
+  background-color: white;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg .color {
+  width: 39px;
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  right: 8px;
+  display: flex;
+  box-shadow: 0 2px 2px 0 rgba(29, 31, 32, 0.12), 0 0 2px 0 rgba(29, 31, 32, 0.08);
+  background-color: white;
+  border-radius: 30px;
+  padding: 3px;
+  justify-content: space-around;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg .color img {
+  width: 21px;
+  height: 21px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .carddesc h3 {
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1F1F1F;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .rating {
+  display: flex;
+  color: gold;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .rating i {
+  font-size: 13px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .rating span {
+  color: #707070;
+  font-size: 11px;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 h4 {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 .sepette {
+  font-size: 13px;
+  color: #4F379B;
+  font-weight: 700;
+}
+.elektronik1 .elektronikcontainer .elektronikcards .card1 h2 {
+  color: #202020;
+  font-size: 20px;
+}
+.elektronik1 .elektronikcontainer .elektronikmarka {
+  width: 600px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
+.elektronik1 .elektronikcontainer .elektronikmarka img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.markalar {
+  width: 100%;
+  height: 250px;
+  background-color: #EDEFF3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.markalar .markalarcontainer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.markalar .markalarcontainer .markalarimgs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.markalar .markalarcontainer .markalarimgs .markaimg {
+  width: 150px;
+  height: 150px;
+}
+.markalar .markalarcontainer .markalarimgs .markaimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.firsatlar {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firsatlar .firsatlarcontainer {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  width: 80%;
+  height: 80%;
+}
+.firsatlar .firsatlarcontainer ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.firsatlar .firsatlarcontainer ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 10px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .footercontainer {
+  width: 80%;
+  display: flex;
+}
+footer .footercontainer .n111 {
+  width: 20%;
+}
+footer .footercontainer .n111 ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .footercontainer .n111 li {
+  font-size: 13px;
+}
+footer .footercontainer .n11 {
+  width: 20%;
+}
+footer .footercontainer .n11 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .footercontainer .n11 li {
+  font-size: 13px;
+}
+footer .footercontainer .n112 {
+  width: 23%;
+  height: auto;
+  border: 4px solid #ededed;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footercontainer .n112 ul {
+  gap: 10px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+footer .footercontainer .n112 ul li {
+  font-size: 13px;
+}
+footer .footercontainer .n112 .magaza {
+  color: #5d3ebc;
+  border: 1px solid #5D3EBC;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px;
+}
+footer .footercontainer .n112 .ucretsiz {
+  color: white;
+  background-color: #5D3EBC;
+  border: 1px solid #5D3EBC;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.footerbottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footerbottom .bottomcontainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  gap: 10px;
+}
+.footerbottom .bottomcontainer .indir {
+  width: 40%;
+}
+.footerbottom .bottomcontainer .indir .indirimgs {
+  width: 100%;
+}
+.footerbottom .bottomcontainer .indir .indirimgs img {
+  width: 140px;
+  height: 40px;
+}
+.footerbottom .bottomcontainer .takip {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerbottom .bottomcontainer .takip .takipicons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footerbottom .bottomcontainer .takip .takipicons .ig {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  color: #5E5E5E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerbottom .bottomcontainer .blog {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerbottom .bottomcontainer .qr {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.footerbottom .bottomcontainer .trgo {
+  width: 10%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .top {
+    display: none;
+  }
+  header {
+    width: 100%;
+    height: 120px;
+  }
+  header .headercontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header .headercontainer .headerleft {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  header .headercontainer .headerleft img {
+    width: 80px;
+    height: 100%;
+  }
+  header .headercontainer .headerright {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header .headercontainer .headerright .hamb {
+    display: block;
+    font-size: 20px;
+  }
+  header .headercontainer .headerright .search {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #5D3EBC;
+    border-radius: 30px;
+  }
+  header .headercontainer .headerright .search i {
+    color: #5D3EBC;
+  }
+  header .headercontainer .headerright .search input {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: px;
+  }
+  header .headercontainer .headerright .teslimat {
+    display: none;
+  }
+  header .headercontainer .headerright .cart {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #5D3EBC;
+    border: 1px solid #5D3EBC;
+    border-radius: 50%;
+  }
+  header .headercontainer .headerright .hesabim {
+    display: none;
+  }
+  .category {
+    display: none;
+  }
+  .kampanya {
+    width: 100%;
+    height: auto;
+  }
+  .kampanya .kampanyacontainer {
+    width: 95%;
+    height: auto;
+  }
+  .kampanya .kampanyacontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .kuponlar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .kuponlar .kuponlarcontainer {
+    width: 100%;
+    height: 70%;
+    background-color: #edeff3;
+    border-radius: 5px;
+  }
+  .kuponlar .kuponlarcontainer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .kuponlar .kuponlarcontainer ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .kuponlar .kuponlarcontainer ul li img {
+    width: 30px;
+    height: 30px;
+  }
+  .kuponlar .kuponlarcontainer ul li span {
+    font-size: 8px;
+    color: #1F1F1F;
+  }
+  .kuponlar .kuponlarcontainer ul li .border {
+    width: 1px;
+    height: 30px;
+    background-color: #d3d6df;
+  }
+  .kuponlar {
+    display: none;
+  }
+  .fivecards {
+    width: 100%;
+    height: 450px;
+  }
+  .fivecards .fivecontainer {
+    width: 90%;
+    height: 100%;
+    position: unset;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .fivecards .fivecontainer .card1 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fivecards .fivecontainer .card1 .cardimg {
+    width: 100%;
+    height: 230px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .fivecards .fivecontainer .card1 .cardimg img {
+    width: 100%;
+    height: 200px;
+  }
+  .fivecards .fivecontainer .card1 .carddesc {
+    width: 100%;
+  }
+  .fivecards .fivecontainer .card1 .carddesc h3 {
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1F1F1F;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .fivecards .fivecontainer .card1 h2 {
+    color: #202020;
+    font-size: 15px;
+  }
+  .teklifler {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .teklifler .tekliflercontainer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+  .teklifler .tekliflercontainer .tekliflertxt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .teklifler .tekliflercontainer .tekliflertxt h2 {
+    font-size: 19px;
+    color: white;
+  }
+  .teklifler .tekliflercontainer .tekliflersaat {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .teklifler .tekliflercontainer .tekliflersaat .saat {
+    width: 35px;
+    height: 35px;
+  }
+  .tekliflercards {
+    width: 100%;
+    height: 450px;
+  }
+  .tekliflercards .cardscontainer {
+    width: 90%;
+    height: 100%;
+    position: unset;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .tekliflercards .cardscontainer .card1 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tekliflercards .cardscontainer .card1 .cardimg {
+    width: 100%;
+    height: 230px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .tekliflercards .cardscontainer .card1 .cardimg img {
+    width: 100%;
+    height: 200px;
+  }
+  .tekliflercards .cardscontainer .card1 .cardimg h5 {
+    color: #5D3EBC;
+    text-align: center;
+    font-size: 13px;
+  }
+  .tekliflercards .cardscontainer .card1 .carddesc {
+    width: 100%;
+  }
+  .tekliflercards .cardscontainer .card1 .carddesc h3 {
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1F1F1F;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .tekliflercards .cardscontainer .card1 h2 {
+    color: #202020;
+    font-size: 15px;
+  }
+  .secenekler {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .secenekler .seceneklercontainer {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .secenekler .seceneklercontainer .secenektxt h2 {
+    font-size: 20px;
+  }
+  .secenekler .seceneklercontainer .secenekcards {
+    display: flex;
+    position: unset;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 {
+    width: 55%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .cardimg {
+    width: 100%;
+    height: 225px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .cardimg img {
+    width: 100%;
+    height: 200px;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .cardimg h5 {
+    color: #5D3EBC;
+    text-align: center;
+    font-size: 13px;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .cardimg .wish {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #4F4F4F;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .cardimg .badges {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .cardimg .badges img {
+    width: 55px;
+    height: 55px;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .carddesc h3 {
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1F1F1F;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .rating {
+    display: flex;
+    color: gold;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .rating i {
+    font-size: 13px;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .rating span {
+    color: #707070;
+    font-size: 11px;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 h4 {
+    text-decoration: line-through;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 .sepette {
+    font-size: 13px;
+    color: #4F379B;
+    font-weight: 700;
+  }
+  .secenekler .seceneklercontainer .secenekcards .card1 h2 {
+    color: #202020;
+    font-size: 15px;
+  }
+  .elektronik {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .elektronik .elektronikcontainer {
+    width: 98%;
+    height: 100%;
+  }
+  .elektronik .elektronikcontainer .elektronikimg {
+    width: 100%;
+    height: 180px;
+    height: 234px;
+    height: auto;
+    position: relative;
+  }
+  .elektronik .elektronikcontainer .elektronikimg img {
+    width: 100%;
+  }
+  .elektronik .elektronikcontainer .elektronikcards {
+    width: 50%;
+    height: 56%;
+    position: absolute;
+    display: flex;
+    right: 0px;
+    top: 10px;
+    gap: 10px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .cardimg {
+    width: 100%;
+    height: 75px;
+    height: 100%;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .cardimg img {
+    width: 100%;
+    height: 150px;
+    height: 100%;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .cardimg h5 {
+    color: #5D3EBC;
+    text-align: center;
+    font-size: 13px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .cardimg .wish {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #4F4F4F;
+    background-color: white;
+    font-size: 10px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .cardimg .badges {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .cardimg .badges img {
+    width: 15px;
+    height: 15px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .carddesc {
+    display: none;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .carddesc h3 {
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1F1F1F;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .rating {
+    display: flex;
+    color: gold;
+    display: none;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .rating i {
+    font-size: 13px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .rating span {
+    color: #707070;
+    font-size: 11px;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 h4 {
+    text-decoration: line-through;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 .sepette {
+    font-size: 13px;
+    color: #4F379B;
+    font-weight: 700;
+    display: none;
+  }
+  .elektronik .elektronikcontainer .elektronikcards .card1 h2 {
+    color: #202020;
+    font-size: 20px;
+    display: none;
+  }
+  .elektronik .elektronikcontainer .elektronikmarka {
+    width: 260px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .elektronik .elektronikcontainer .elektronikmarka img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .elektronik1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .elektronik1 .elektronikcontainer {
+    width: 98%;
+    height: 100%;
+  }
+  .elektronik1 .elektronikcontainer .elektronikimg {
+    width: 100%;
+    height: 180px;
+    height: 234px;
+    height: auto;
+    position: relative;
+  }
+  .elektronik1 .elektronikcontainer .elektronikimg img {
+    width: 100%;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards {
+    width: 50%;
+    height: 56%;
+    position: absolute;
+    display: flex;
+    right: 0px;
+    top: 10px;
+    gap: 10px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg {
+    width: 100%;
+    height: 75px;
+    height: 100%;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg img {
+    width: 100%;
+    height: 150px;
+    height: 100%;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg h5 {
+    color: #5D3EBC;
+    text-align: center;
+    font-size: 13px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg .wish {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #4F4F4F;
+    background-color: white;
+    font-size: 10px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg .color {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    display: flex;
+    box-shadow: 0 2px 2px 0 rgba(29, 31, 32, 0.12), 0 0 2px 0 rgba(29, 31, 32, 0.08);
+    background-color: white;
+    border-radius: 30px;
+    padding: 3px;
+    justify-content: space-around;
+    font-size: 8px;
+    align-items: center;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .cardimg .color img {
+    width: 10px;
+    height: 10px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .carddesc {
+    display: none;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .carddesc h3 {
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1F1F1F;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .rating {
+    display: flex;
+    color: gold;
+    display: none;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .rating i {
+    font-size: 13px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .rating span {
+    color: #707070;
+    font-size: 11px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 h4 {
+    text-decoration: line-through;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 .sepette {
+    font-size: 13px;
+    color: #4F379B;
+    font-weight: 700;
+    display: none;
+  }
+  .elektronik1 .elektronikcontainer .elektronikcards .card1 h2 {
+    color: #202020;
+    font-size: 20px;
+    display: none;
+  }
+  .elektronik1 .elektronikcontainer .elektronikmarka {
+    width: 260px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .elektronik1 .elektronikcontainer .elektronikmarka img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .markalar {
+    width: 100%;
+    height: auto;
+    background-color: #EDEFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .markalar .markalarcontainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .markalar .markalarcontainer .markalarimgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .markalar .markalarcontainer .markalarimgs .markaimg {
+    width: 100%;
+    height: 100%;
+  }
+  .markalar .markalarcontainer .markalarimgs .markaimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .firsatlar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+  .firsatlar .firsatlarcontainer {
+    width: 80%;
+    height: 100%;
+  }
+  .firsatlar .firsatlarcontainer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .firsatlar .firsatlarcontainer ul li {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    font-size: 10px;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .footercontainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .footercontainer .n111 {
+    width: 50%;
+  }
+  footer .footercontainer .n111 ul {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footercontainer .n111 li {
+    font-size: 13px;
+  }
+  footer .footercontainer .n11 {
+    width: 50%;
+  }
+  footer .footercontainer .n11 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  footer .footercontainer .n11 li {
+    font-size: 13px;
+  }
+  footer .footercontainer .n112 {
+    width: 80%;
+    height: auto;
+    border: 4px solid #ededed;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer .footercontainer .n112 ul {
+    gap: 10px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  footer .footercontainer .n112 ul li {
+    font-size: 13px;
+  }
+  footer .footercontainer .n112 .magaza {
+    color: #5d3ebc;
+    border: 1px solid #5D3EBC;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  footer .footercontainer .n112 .ucretsiz {
+    color: white;
+    background-color: #5D3EBC;
+    border: 1px solid #5D3EBC;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .footerbottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footerbottom .bottomcontainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 10px;
+  }
+  .footerbottom .bottomcontainer .indir {
+    width: 100%;
+  }
+  .footerbottom .bottomcontainer .indir .indirtxt {
+    font-size: 13px;
+  }
+  .footerbottom .bottomcontainer .indir .indirimgs {
+    width: 100%;
+  }
+  .footerbottom .bottomcontainer .indir .indirimgs img {
+    width: 109px;
+    height: 32px;
+  }
+  .footerbottom .bottomcontainer .takip {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footerbottom .bottomcontainer .takip .takiptxt {
+    text-align: center;
+  }
+  .footerbottom .bottomcontainer .takip .takipicons {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+  }
+  .footerbottom .bottomcontainer .takip .takipicons .ig {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F7F7F7;
+    color: #5E5E5E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerbottom .bottomcontainer .blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .footerbottom .bottomcontainer .blog img {
+    width: 90px;
+    height: 35px;
+  }
+  .footerbottom .bottomcontainer .qr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footerbottom .bottomcontainer .trgo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

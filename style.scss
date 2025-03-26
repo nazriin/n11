@@ -1,0 +1,2052 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.top {
+    width: 100%;
+    height: 60px;
+    background-image: url(https://n11scdn.akamaized.net/a1/org/25/03/21/59/22/12/65/16/72/18/43/78/98705717187360503777.jpg);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+    .headercontainer {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .headerleft {
+            width: 10%;
+            height: 45px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .headerright {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .hamb {
+                display: none;
+            }
+
+            .search {
+                width: 680px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border: 1px solid #5D3EBC;
+                border-radius: 30px;
+
+                i {
+                    color: #5D3EBC;
+                }
+
+                input {
+                    width: 640px;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                }
+            }
+
+            .teslimat {
+                width: 165px;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 25px;
+                        color: #5D3EBC;
+                    }
+                }
+
+                .teslimattxt {
+                    width: 120px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h5 {
+                        font-size: 10px;
+                        color: #4F4F4F;
+                    }
+
+                    a {
+                        font-size: 13px;
+                        color: #5D3EBC;
+                    }
+                }
+            }
+
+            .cart {
+                width: 60px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: #5D3EBC;
+                border-left: 1px solid #4F4F4F;
+            }
+
+            .hesabim {
+                width: 165px;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 22px;
+                        color: #5D3EBC;
+                    }
+                }
+
+                .hesabimtxt {
+                    width: 120px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h5 {
+                        font-size: 10px;
+                        color: #4F4F4F;
+                    }
+
+                    a {
+                        font-size: 11px;
+                        color: #5D3EBC;
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.category {
+    width: 100%;
+    height: 50px;
+    background-color: #F6F7F9;
+    display: flex;
+    justify-content: center;
+
+    .categorycontainer {
+        width: 80%;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                &:hover {
+                    border-bottom: 2px solid #4F379B;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                span {
+                    font-size: 13px;
+                    color: #424242;
+                }
+            }
+        }
+    }
+}
+
+.kampanya {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .kampanyacontainer {
+        width: 80%;
+        height: 90%;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+}
+
+.kuponlar {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .kuponlarcontainer {
+        width: 80%;
+        height: 70%;
+        background-color: #edeff3;
+        border-radius: 5px;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: #1F1F1F;
+                }
+
+                .border {
+                    width: 1px;
+                    height: 30px;
+                    background-color: #d3d6df;
+                }
+            }
+        }
+    }
+}
+
+.fivecards {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+
+    .fivecontainer {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        position: unset;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        .card1 {
+            width: 18%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .cardimg {
+                width: 100%;
+                height: 230px;
+                border: 1px solid #ededed;
+                border-radius: 5px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                }
+
+                h5 {
+                    color: #5D3EBC;
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+
+            .carddesc {
+                h3 {
+                    text-overflow: ellipsis;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #1F1F1F;
+                    word-wrap: break-word;
+                    overflow: hidden;
+                }
+            }
+
+            .rating {
+                display: flex;
+                color: gold;
+
+                i {
+                    font-size: 13px;
+                }
+
+                span {
+                    color: #707070;
+                    font-size: 11px;
+                }
+            }
+
+            h4 {
+                text-decoration: line-through;
+                color: #707070;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .sepette {
+                font-size: 13px;
+                color: #4F379B;
+                font-weight: 700;
+            }
+
+            h2 {
+                color: #202020;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.teklifler {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+    .tekliflercontainer {
+        width: 80%;
+        height: 100%;
+        background-color: #4F379B;
+        border-radius: 5px;
+        display: flex;
+
+        .tekliflertxt {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+
+            h2 {
+                font-size: 24px;
+                color: white;
+            }
+        }
+
+        .tekliflersaat {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 10px;
+
+            .saat {
+                width: 55px;
+                height: 55px;
+                background-color: white;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .deq {
+                width: 10px;
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                color: #cbc0f9ef;
+            }
+        }
+    }
+}
+
+.tekliflercards {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cardscontainer {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        position: unset;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+
+        .card1 {
+            width: 18%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .cardimg {
+                width: 100%;
+                height: 230px;
+                border: 1px solid #ededed;
+                border-radius: 5px;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                }
+
+                h5 {
+                    color: #5D3EBC;
+                    text-align: center;
+                    font-size: 13px;
+                }
+
+                .wish {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                    color: #4F4F4F;
+                }
+
+                .badges {
+                    position: absolute;
+                    top: 8px;
+                    left: 8px;
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+            }
+
+            .carddesc {
+                h3 {
+                    text-overflow: ellipsis;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #1F1F1F;
+                    word-wrap: break-word;
+                    overflow: hidden;
+                }
+            }
+
+            .rating {
+                display: flex;
+                color: gold;
+
+                i {
+                    font-size: 13px;
+                }
+
+                span {
+                    color: #707070;
+                    font-size: 11px;
+                }
+            }
+
+            h4 {
+                text-decoration: line-through;
+                color: #707070;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .sepette {
+                font-size: 13px;
+                color: #4F379B;
+                font-weight: 700;
+            }
+
+            h2 {
+                color: #202020;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.secenekler{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .seceneklercontainer{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        .secenekcards{
+            display: flex;
+            position: unset;
+            overflow-x: auto;
+            white-space: nowrap;
+            gap: 10px;
+            .card1 {
+                width: 18%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .cardimg {
+                    width: 100%;
+                    height: 230px;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+    
+                    img {
+                        width: 100%;
+                        height: 200px;
+                    }
+    
+                    h5 {
+                        color: #5D3EBC;
+                        text-align: center;
+                        font-size: 13px;
+                    }
+    
+                    .wish {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                        color: #4F4F4F;
+                    }
+    
+                    .badges {
+                        position: absolute;
+                        top: 8px;
+                        left: 8px;
+                        display: flex;
+                        flex-direction: column;
+    
+                        img {
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+    
+                .carddesc {
+                    h3 {
+                        text-overflow: ellipsis;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #1F1F1F;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                    }
+                }
+    
+                .rating {
+                    display: flex;
+                    color: gold;
+    
+                    i {
+                        font-size: 13px;
+                    }
+    
+                    span {
+                        color: #707070;
+                        font-size: 11px;
+                    }
+                }
+    
+                h4 {
+                    text-decoration: line-through;
+                    color: #707070;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+    
+                .sepette {
+                    font-size: 13px;
+                    color: #4F379B;
+                    font-weight: 700;
+                }
+    
+                h2 {
+                    color: #202020;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+.elektronik{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .elektronikcontainer{
+        width: 80%;
+        height: 100%;
+        .elektronikimg{
+            width:100% ;
+            height: 475px;
+            position: relative;
+            img{
+                border-radius: 5px;
+            }
+        }
+        .elektronikcards{
+            width: 40%;
+            position: absolute;
+            display: flex;
+            right: 0px;
+            top: 10px;
+            gap: 10px;
+            .card1 {
+                width: 40%;
+                height: 325px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 5px;
+                padding: 15px;
+                .cardimg {
+                    width: 100%;
+                    height: 175px;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 150px;
+                    }
+    
+                    h5 {
+                        color: #5D3EBC;
+                        text-align: center;
+                        font-size: 13px;
+                    }
+    
+                    .wish {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                        color: #4F4F4F;
+                        background-color: white;
+                    }
+    
+                    .badges {
+                        position: absolute;
+                        top: 8px;
+                        left: 8px;
+                        display: flex;
+                        flex-direction: column;
+    
+                        img {
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+    
+                .carddesc {
+                    h3 {
+                        text-overflow: ellipsis;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #1F1F1F;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                    }
+                }
+    
+                .rating {
+                    display: flex;
+                    color: gold;
+    
+                    i {
+                        font-size: 13px;
+                    }
+    
+                    span {
+                        color: #707070;
+                        font-size: 11px;
+                    }
+                }
+    
+                h4 {
+                    text-decoration: line-through;
+                    color: #707070;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+    
+                .sepette {
+                    font-size: 13px;
+                    color: #4F379B;
+                    font-weight: 700;
+                }
+    
+                h2 {
+                    color: #202020;
+                    font-size: 20px;
+                }
+            }
+        }
+        .elektronikmarka{
+            width: 600px;
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            display: flex;
+            gap: 20px;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.elektronik1{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .elektronikcontainer{
+        width: 80%;
+        height: 100%;
+        .elektronikimg{
+            width:100% ;
+            height: 475px;
+            position: relative;
+            img{
+                border-radius: 5px;
+            }
+        }
+        .elektronikcards{
+            width: 40%;
+            position: absolute;
+            display: flex;
+            right: 0px;
+            top: 10px;
+            gap: 10px;
+            .card1 {
+                width: 40%;
+                height: 325px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: white;
+                border-radius: 5px;
+                padding: 15px;
+                .cardimg {
+                    width: 100%;
+                    height: 175px;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 150px;
+                    }
+    
+                    h5 {
+                        color: #5D3EBC;
+                        text-align: center;
+                        font-size: 13px;
+                    }
+    
+                    .wish {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                        color: #4F4F4F;
+                        background-color: white;
+                    }
+    
+                    .color {
+                        width: 39px;
+                        display: flex;
+                        position: absolute;
+                        bottom: 15px;
+                        right: 8px;
+                        display: flex;
+                        box-shadow: 0 2px 2px 0 rgba(29,31,32,.12),0 0 2px 0 rgba(29,31,32,.08);
+                        background-color: white;
+                        border-radius: 30px;
+                        padding: 3px;
+                        justify-content: space-around;
+                        img {
+                            width: 21px;
+                            height: 21px;
+                        }
+                    }
+                }
+    
+                .carddesc {
+                    h3 {
+                        text-overflow: ellipsis;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #1F1F1F;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                    }
+                }
+    
+                .rating {
+                    display: flex;
+                    color: gold;
+    
+                    i {
+                        font-size: 13px;
+                    }
+    
+                    span {
+                        color: #707070;
+                        font-size: 11px;
+                    }
+                }
+    
+                h4 {
+                    text-decoration: line-through;
+                    color: #707070;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+    
+                .sepette {
+                    font-size: 13px;
+                    color: #4F379B;
+                    font-weight: 700;
+                }
+    
+                h2 {
+                    color: #202020;
+                    font-size: 20px;
+                }
+            }
+        }
+        .elektronikmarka{
+            width: 600px;
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            display: flex;
+            gap: 20px;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.markalar{
+    width: 100%;
+    height: 250px;
+    background-color: #EDEFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .markalarcontainer{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .markalarimgs{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .markaimg{
+                width: 150px;
+                height: 150px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.firsatlar{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .firsatlarcontainer{
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        width: 80%;
+        height: 80%;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            li{
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                gap: 10px;
+                
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .footercontainer{
+        width: 80%;
+        display: flex;
+        .n111{
+            
+                width: 20%;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                }
+                li{
+                    font-size: 13px;
+                }
+            
+        }
+        .n11{
+            width: 20%;
+            ul{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+            }
+            li{
+                font-size: 13px;
+            }
+        }
+        .n112{
+            width: 23%;
+            height: auto;
+            border: 4px solid #ededed;
+            border-radius: 8px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                gap: 10px;
+                display: flex;
+                height: auto;
+                flex-direction: column;
+                li{
+                    font-size: 13px;
+                }
+            }
+            .magaza{
+                color: #5d3ebc;
+                border: 1px solid #5D3EBC;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: 600;
+                padding: 10px;
+            }
+            .ucretsiz{
+                color: white;
+                background-color: #5D3EBC;
+                border: 1px solid #5D3EBC;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: 600;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.footerbottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .bottomcontainer{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        gap: 10px;
+        .indir{
+            width: 40%;
+            .indirimgs{
+                width: 100%;
+                img{
+                    width: 140px;
+                    height: 40px;
+                }
+            }
+        }
+        .takip{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .takipicons{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .ig{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #F7F7F7;
+                    color: #5E5E5E;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        .blog{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .qr{
+            width: 15%;
+            display: flex;
+            justify-content: center;
+        }
+        .trgo{
+            width: 10%;
+        }
+    }
+}
+
+// -------------------------------------------------------MEDIA------------------------------------------------------------------------
+// -------------------------------------------------------QUERY-------------------------------------------------------------------------
+
+
+@media screen and (min-width:300px) and (max-width:576px) {
+    .top {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: 120px;
+
+        .headercontainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .headerleft {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 80px;
+                    height: 100%;
+                }
+            }
+
+            .headerright {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .hamb {
+                    display: block;
+                    font-size: 20px;
+                }
+
+                .search {
+                    width: 80%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border: 1px solid #5D3EBC;
+                    border-radius: 30px;
+
+                    i {
+                        color: #5D3EBC;
+                    }
+
+                    input {
+                        width: 90%;
+                        border: none;
+                        outline: none;
+                        font-size: px;
+                    }
+                }
+
+                .teslimat {
+                    display: none;
+                }
+
+                .cart {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    color: #5D3EBC;
+                    border: 1px solid #5D3EBC;
+                    border-radius: 50%;
+                }
+
+                .hesabim {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .category {
+        display: none;
+    }
+
+    .kampanya {
+        width: 100%;
+        height: auto;
+
+        .kampanyacontainer {
+            width: 95%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .kuponlar {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .kuponlarcontainer {
+            width: 100%;
+            height: 70%;
+            background-color: #edeff3;
+            border-radius: 5px;
+
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                li {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 0;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    span {
+                        font-size: 8px;
+                        color: #1F1F1F;
+                    }
+
+                    .border {
+                        width: 1px;
+                        height: 30px;
+                        background-color: #d3d6df;
+                    }
+                }
+            }
+        }
+    }
+.kuponlar{
+    display: none;
+}
+
+    .fivecards {
+        width: 100%;
+        height: 450px;
+
+        .fivecontainer {
+            width: 90%;
+            height: 100%;
+            position: unset;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            .card1 {
+                width: 50%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .cardimg {
+                    width: 100%;
+                    height: 230px;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+
+                .carddesc {
+                    width: 100%;
+                    h3 {
+                        text-overflow: ellipsis;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #1F1F1F;
+                        word-wrap: break-word;
+                        overflow: hidden;
+
+                    }
+                }
+                h2 {
+                    color: #202020;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .teklifler {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tekliflercontainer {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            .tekliflertxt {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                h2 {
+                    font-size: 19px;
+                    color: white;
+                }
+            }
+
+            .tekliflersaat {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                .saat {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .tekliflercards {
+        width: 100%;
+        height: 450px;
+
+        .cardscontainer {
+            width: 90%;
+            height: 100%;
+            position: unset;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            .card1 {
+                width: 50%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .cardimg {
+                    width: 100%;
+                    height: 230px;
+                    border: 1px solid #ededed;
+                    border-radius: 5px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 200px;
+                    }
+
+                    h5 {
+                        color: #5D3EBC;
+                        text-align: center;
+                        font-size: 13px;
+                    }
+                }
+
+                .carddesc {
+                    width: 100%;
+                    h3 {
+                        text-overflow: ellipsis;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #1F1F1F;
+                        word-wrap: break-word;
+                        overflow: hidden;
+
+                    }
+                }
+                h2 {
+                    color: #202020;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .secenekler{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .seceneklercontainer{
+            width: 80%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .secenektxt{
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .secenekcards{
+                display: flex;
+                position: unset;
+                overflow-x: auto;
+                white-space: nowrap;
+                gap: 10px;
+                .card1 {
+                    width: 55%;
+                    height: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+        
+                    .cardimg {
+                        width: 100%;
+                        height: 225px;
+                        border: 1px solid #ededed;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        position: relative;
+        
+                        img {
+                            width: 100%;
+                            height: 200px;
+                        }
+        
+                        h5 {
+                            color: #5D3EBC;
+                            text-align: center;
+                            font-size: 13px;
+                        }
+        
+                        .wish {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                            color: #4F4F4F;
+                        }
+        
+                        .badges {
+                            position: absolute;
+                            top: 8px;
+                            left: 8px;
+                            display: flex;
+                            flex-direction: column;
+        
+                            img {
+                                width: 55px;
+                                height: 55px;
+                            }
+                        }
+                    }
+        
+                    .carddesc {
+                        h3 {
+                            text-overflow: ellipsis;
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: #1F1F1F;
+                            word-wrap: break-word;
+                            overflow: hidden;
+                        }
+                    }
+        
+                    .rating {
+                        display: flex;
+                        color: gold;
+        
+                        i {
+                            font-size: 13px;
+                        }
+        
+                        span {
+                            color: #707070;
+                            font-size: 11px;
+                        }
+                    }
+        
+                    h4 {
+                        text-decoration: line-through;
+                        color: #707070;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+        
+                    .sepette {
+                        font-size: 13px;
+                        color: #4F379B;
+                        font-weight: 700;
+                    }
+        
+                    h2 {
+                        color: #202020;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .elektronik{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        .elektronikcontainer{
+            width: 98%;
+            height: 100%;
+            .elektronikimg{
+                width:100% ;
+                height: 180px;
+                height: 234px;
+                height: auto;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+            }
+            .elektronikcards{
+                width: 50%;
+                height: 56%;
+                position: absolute;
+                display: flex;
+                right: 0px;
+                top: 10px;
+                gap: 10px;
+                .card1 {
+                    width: 45%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 15px;
+                    .cardimg {
+                        width: 100%;
+                        height: 75px;
+                        height: 100%;
+                        border: 1px solid #ededed;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 150px;
+                            height: 100%;
+                        }
+        
+                        h5 {
+                            color: #5D3EBC;
+                            text-align: center;
+                            font-size: 13px;
+                        }
+        
+                        .wish {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                            color: #4F4F4F;
+                            background-color: white;
+                            font-size: 10px;
+                        }
+        
+                        .badges {
+                            position: absolute;
+                            top: 8px;
+                            left: 8px;
+                            display: flex;
+                            flex-direction: column;
+        
+                            img {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+        
+                    .carddesc {
+                        h3 {
+                            text-overflow: ellipsis;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #1F1F1F;
+                            word-wrap: break-word;
+                            overflow: hidden;
+                        }
+                        display: none;
+                    }
+        
+                    .rating {
+                        display: flex;
+                        color: gold;
+        
+                        i {
+                            font-size: 13px;
+                        }
+        
+                        span {
+                            color: #707070;
+                            font-size: 11px;
+                        }
+                        display: none;
+                    }
+        
+                    h4 {
+                        text-decoration: line-through;
+                        color: #707070;
+                        font-size: 14px;
+                        font-weight: 400;
+                        display: none;
+                    }
+        
+                    .sepette {
+                        font-size: 13px;
+                        color: #4F379B;
+                        font-weight: 700;
+                        display: none;
+                    }
+        
+                    h2 {
+                        color: #202020;
+                        font-size: 20px;
+                        display: none;
+                    }
+                }
+            }
+            .elektronikmarka{
+                width: 260px;
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                display: flex;
+                gap: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .elektronik1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        .elektronikcontainer{
+            width: 98%;
+            height: 100%;
+            .elektronikimg{
+                width:100% ;
+                height: 180px;
+                height: 234px;
+                height: auto;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+            }
+            .elektronikcards{
+                width: 50%;
+                height: 56%;
+                position: absolute;
+                display: flex;
+                right: 0px;
+                top: 10px;
+                gap: 10px;
+                .card1 {
+                    width: 45%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 15px;
+                    .cardimg {
+                        width: 100%;
+                        height: 75px;
+                        height: 100%;
+                        border: 1px solid #ededed;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 150px;
+                            height: 100%;
+                        }
+        
+                        h5 {
+                            color: #5D3EBC;
+                            text-align: center;
+                            font-size: 13px;
+                        }
+        
+                        .wish {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+                            color: #4F4F4F;
+                            background-color: white;
+                            font-size: 10px;
+                        }
+        
+                        .color {
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            position: absolute;
+                            bottom: 0px;
+                            right: 5px;
+                            display: flex;
+                            box-shadow: 0 2px 2px 0 rgba(29,31,32,.12),0 0 2px 0 rgba(29,31,32,.08);
+                            background-color: white;
+                            border-radius: 30px;
+                            padding: 3px;
+                            justify-content: space-around;
+                            font-size: 8px;
+                            align-items: center;
+                            img {
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                    }
+        
+                    .carddesc {
+                        h3 {
+                            text-overflow: ellipsis;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: #1F1F1F;
+                            word-wrap: break-word;
+                            overflow: hidden;
+                        }
+                        display: none;
+                    }
+        
+                    .rating {
+                        display: flex;
+                        color: gold;
+        
+                        i {
+                            font-size: 13px;
+                        }
+        
+                        span {
+                            color: #707070;
+                            font-size: 11px;
+                        }
+                        display: none;
+                    }
+        
+                    h4 {
+                        text-decoration: line-through;
+                        color: #707070;
+                        font-size: 14px;
+                        font-weight: 400;
+                        display: none;
+                    }
+        
+                    .sepette {
+                        font-size: 13px;
+                        color: #4F379B;
+                        font-weight: 700;
+                        display: none;
+                    }
+        
+                    h2 {
+                        color: #202020;
+                        font-size: 20px;
+                        display: none;
+                    }
+                }
+            }
+            .elektronikmarka{
+                width: 260px;
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                display: flex;
+                gap: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .markalar{
+        width: 100%;
+        height: auto;
+        background-color: #EDEFF3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .markalarcontainer{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .markalarimgs{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .markaimg{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .firsatlar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        .firsatlarcontainer{
+            width: 80%;
+            height: 100%;
+            ul{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                li{
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    gap: 10px;
+                    width: 50%;
+                    height: 100%;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .footercontainer{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            .n111{
+                
+                    width: 50%;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    li{
+                        font-size: 13px;
+                    }
+                
+            }
+            .n11{
+                width: 50%;
+                ul{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 10px;
+                }
+                li{
+                    font-size: 13px;
+                }
+            }
+            .n112{
+                width: 80%;
+                height: auto;
+                border: 4px solid #ededed;
+                border-radius: 8px;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                ul{
+                    gap: 10px;
+                    display: flex;
+                    height: auto;
+                    flex-direction: column;
+                    li{
+                        font-size: 13px;
+                    }
+                }
+                .magaza{
+                    color: #5d3ebc;
+                    border: 1px solid #5D3EBC;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    padding: 10px;
+                }
+                .ucretsiz{
+                    color: white;
+                    background-color: #5D3EBC;
+                    border: 1px solid #5D3EBC;
+                    text-align: center;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .footerbottom{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .bottomcontainer{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 15px;
+            gap: 10px;
+            .indir{
+                width: 100%;
+                .indirtxt{
+                    font-size: 13px;
+                }
+                .indirimgs{
+                    width: 100%;
+                    img{
+                        width: 109px;
+                        height: 32px;
+                    }
+                }
+            }
+            .takip{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                .takiptxt{
+                    text-align: center;
+                }
+                .takipicons{
+                    display: flex;
+                    width: 75%;
+                    justify-content: space-between;
+                    .ig{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #F7F7F7;
+                        color: #5E5E5E;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            .blog{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                img{
+                    width: 90px;
+                    height: 35px;
+                }
+            }
+            .qr{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .trgo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    
+
+}
